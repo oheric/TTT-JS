@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    
+    <script>
+        var player = 1;
+        var cellstatus = 0;
+
+        function clickCell(cell){
+            if(player == 1 && cellstatus == 0){
+            document.getElementById(cell).style.backgroundColor = 'yellow';
+            player = 2;
+        }else{
+            document.getElementById(cell).style.backgroundColor = 'red';
+            player = 1;
+    }};
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="box">
+        <div id="cell1" onClick="clickCell('cell1')"></div>
+        <div id="cell2" onClick="clickCell('cell2')"></div>
+        <div id="cell3" onClick="clickCell('cell3')"></div>
+        <div id="cell4" onClick="clickCell('cell4')"></div>
+        <div id="cell5" onClick="clickCell('cell5')"></div>
+        <div id="cell6" onClick="clickCell('cell6')"></div>
+        <div id="cell7" onClick="clickCell('cell7')"></div>
+        <div id="cell8" onClick="clickCell('cell8')"></div>
+        <div id="cell9" onClick="clickCell('cell9')"></div>
+    </div>
+  
+
+
+
+
+</body>
+</html>
